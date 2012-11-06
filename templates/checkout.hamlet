@@ -1,0 +1,9 @@
+<h1>Checkout
+<p>What size lemonade would you like?
+<form enctype="#{enctype}" method="post">
+  <table>
+    ^{form}
+    <tr>
+      <td>&nbsp;
+      <td>
+        <button type="submit">Checkout

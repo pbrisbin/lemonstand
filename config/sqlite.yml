@@ -1,0 +1,20 @@
+Default: &defaults
+  database: lemonstand.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: lemonstand_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: lemonstand_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: lemonstand_production.sqlite3
+  poolsize: 100
+  <<: *defaults
